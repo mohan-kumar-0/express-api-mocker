@@ -1,6 +1,6 @@
 {
   "name": "express-api-mocker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,11 @@
   "keywords": [],
   "author": "Mohan Kumar",
   "license": "ISC",
-  "description": "",
+  "description": "An express mock api server for testing purposes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohan-kumar-0/express-api-mocker.git"
+  },
   "dependencies": {
     "body-parser": "^1.20.2",
     "express": "^4.19.2"
