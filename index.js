@@ -1,14 +1,28 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const fs = require('fs');
+const cors = require('cors');
 const http = require('http');
 const https = require('https');
+const { generateTLSCertificates } = require('./tlsUtils');
 
 class ApiMocker {
   constructor() {
     this.app = express();
     this.app.use(bodyParser.json());
     this.routes = [];
+  }
+
+  addCustomHeaders(headers) {
+    this.app.use((req, res, next) => {
+      Object.entries(headers).forEach(([key, value]) => {
+        res.setHeader(key, value);
+      });
+      next();
+    });
+  }
+
+  enableCORS(options) {
+    this.app.use(cors(options));
   }
 
   mockGet(endpoint, response) {
@@ -51,4 +65,4 @@ class ApiMocker {
   }
 }
 
-module.exports = ApiMocker;
+module.exports = { ApiMocker, generateTLSCertificates };

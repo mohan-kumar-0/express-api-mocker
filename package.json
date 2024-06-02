@@ -1,6 +1,6 @@
 {
   "name": "express-api-mocker",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
   "author": "Mohan Kumar",
   "license": "ISC",
   "description": "An express mock api server for testing purposes",
-  "keywords":[
+  "keywords": [
     "express",
     "api",
     "mock",
@@ -20,6 +20,13 @@
     "development",
     "backend",
     "http",
+    "https",
+    "tls",
+    "ssl",
+    "certificate",
+    "cert",
+    "encryption",
+    "security",
     "rest",
     "json",
     "stub",
@@ -53,14 +60,38 @@
     "mocker-api",
     "mock-api",
     "mock api",
-    "api mock"
-  ],  
+    "api mock",
+    "cors",
+    "cross-origin",
+    "custom-headers",
+    "headers",
+    "cors-support",
+    "configurable",
+    "mock-server",
+    "tls-enabled",
+    "secure",
+    "https-server",
+    "api-testing",
+    "devtools",
+    "mock-data",
+    "mock-endpoints",
+    "local-server",
+    "developer-tools",
+    "web-development",
+    "api-development",
+    "simulated-api",
+    "local-api",
+    "sandbox-environment",
+    "tls-certificates",
+    "http-server"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/mohan-kumar-0/express-api-mocker.git"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "express": "^4.19.2"
   }
 }
